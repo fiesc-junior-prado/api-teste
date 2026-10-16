@@ -1,0 +1,26 @@
+[project]
+name = "s11"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "juniorPrado", email = "juniorcvnnn@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard,standart]>=0.143.0",
+    "opencv-python-headless>=5.0.0.93",
+    "pydantic>=2.14.0",
+    "python-multipart>=0.0.32",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+s11 = "s11:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
